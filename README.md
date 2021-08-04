@@ -1,0 +1,2 @@
+# polls
+demo django app
