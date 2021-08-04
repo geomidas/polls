@@ -1,0 +1,16 @@
+LICENCE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+../littlepolls/polls/static/polls/style.css
+../littlepolls/polls/templates/polls/detail.html
+../littlepolls/polls/templates/polls/footer.html
+../littlepolls/polls/templates/polls/header.html
+../littlepolls/polls/templates/polls/index.html
+../littlepolls/polls/templates/polls/results.html
+django_polls.egg-info/PKG-INFO
+django_polls.egg-info/SOURCES.txt
+django_polls.egg-info/dependency_links.txt
+django_polls.egg-info/requires.txt
+django_polls.egg-info/top_level.txt

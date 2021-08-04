@@ -1,0 +1,127 @@
+:root {
+    --header_background:       #c2ff34;
+    --header_hover_background: #00003510;
+    --header_hover_color:      #2a3961;
+    --body_background:         #2a3961;
+    --body_header_color:       #c2ff34;
+    --body_color:              #ececec;
+    --error_color:             #f72585;
+    --footer_color:            #7072eb;
+    --footer_background:       #253257;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif, Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100%;
+    margin: 0;
+    margin-top: 0px;
+    background-color: var(--body_background);
+    color: var(--body_color);
+}
+input {
+    cursor: pointer;
+}
+.header {
+    overflow: hidden;
+    background-color: var(--header_background);
+    padding: 10px 15px;
+    margin-bottom: 30px;
+}
+.header a {
+    float: left;
+    color: var(--body_background);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 20px;
+    border-radius: 6px;
+    font-style: italic;
+}
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.header a:hover {
+    background-color: var(--header_hover_background);
+    color: var(--header_hover_color);
+}
+.header-right {
+    float: right;
+}
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-right {
+        float: none;
+    }
+}
+h1 {
+    color: var(--body_header_color);
+    text-align: left;
+}
+div.body {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+table, th, td {
+    padding: 0px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: 0;
+}
+li {
+    padding: 12px 16px;
+    background-color: #00000013;
+}
+li:nth-child(odd) { background: #00000023; }
+ul li:last-child {
+    border-bottom: none
+}
+.body a {
+    text-decoration: none;
+    color: var(--body_color);
+}
+.body a:hover {
+    color: var(--header_background);
+    text-decoration: underline;
+}
+.button {
+    margin-top: 8px;
+    background-color: var(--error_color);
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: 1px;
+    cursor: pointer;
+}
+.button a {
+    color: var(--body_background);
+}
+.error {
+    color: var(--error_color);
+}
+.footer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 26px 26px;
+    background-color: var(--footer_background);
+    text-align: center;
+    cursor: default;
+}
+.footer a {
+    color: var(--footer_color);
+    text-decoration: none;
+}
+.footer href {
+    cursor: pointer;
+}
+

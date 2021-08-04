@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>little polls</title>
+    <div class="header">
+        <a href="{% url 'polls:index' %}" class="logo">little polls</a>
+        <div class="header-right">
+            <a href="{% url 'polls:index' %}">Home</a>
+            <a href="{% url 'polls:index' %}">Contact</a>
+            <a href="{% url 'polls:index' %}">About</a>
+        </div>
+    </div>
+</head>

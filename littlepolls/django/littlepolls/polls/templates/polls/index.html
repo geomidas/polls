@@ -1,0 +1,19 @@
+{% include "./header.html" %}
+<div class="body">
+    <h1>Polls</h1>
+</div>
+<div class="body">
+    <p>Vote now</p>
+</div>
+<div class="body">
+    {% if latest_question_list %}
+    <ul>
+        {% for question in latest_question_list %}
+        <li class="flexitem"><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No polls are available.</p>
+    {% endif %}
+</div class="body">
+{% include "./footer.html" %}
