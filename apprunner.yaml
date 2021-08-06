@@ -4,5 +4,8 @@ build:
   commands:
     build:
       - pip install django 
-run: 
+run:
+  runtime-version: 3.9.6
   command: python littlepolls/django/littlepolls/manage.py runserver 0.0.0.0:8000
+  network: 
+    port: 8000
