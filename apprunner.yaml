@@ -1,0 +1,8 @@
+version: 1.0
+runtime: python3 
+build:
+  commands:
+    build:
+      - pip install django 
+run: 
+  command: python littlepolls/django/littlepolls/manage.py runserver 0.0.0.0:8000
