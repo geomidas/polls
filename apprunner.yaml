@@ -4,6 +4,10 @@ build:
   commands:
     build:
       - pip install django
+      - pip install pipenv
+      - pipenv install
+    post-build:
+      - python manage.py test
 run:
   runtime-version: 3.9.6
   command: python littlepolls/django/littlepolls/manage.py runserver 0.0.0.0:8000
